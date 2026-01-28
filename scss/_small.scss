@@ -1,0 +1,108 @@
+/* Prevent adjustments of font size after orientation changes.  */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  height: 100%;
+}
+
+/*---- apply a natural box layout model to all elements -------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    font-family: $defaultFont;
+    font-weight: $mediumWeight;
+    color: $fontColor;
+}
+
+#headerWrapper {
+    background-color: $primaryColor;
+}
+header {
+    display: flex;
+    align-items: center;
+    padding: $gutter;
+    gap: $gutter;
+    h1 {
+        margin: 1px;
+        font-size: 1.2rem;
+        font-weight: $boldWeight;
+        color: white;
+    }
+}
+
+#navWrapper {
+    background-color: $secondaryColor;
+}
+
+nav {
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        li {
+            flex: 1;
+        }
+    }
+    li.active {
+        background-color: $primaryColor;
+        a {
+            color: white;
+        }
+    }
+    a{
+        display: block;
+        padding: 0.75rem;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        text-decoration: none;
+        border-bottom: px solid $primaryColor;
+        &:hover {
+            background: $primaryColor;
+            color: white;
+        }
+    }
+}
+
+
+picture {
+    img {
+        max-width: 100%;
+        margin-bottom: $gutter;
+    }
+}
+video {
+    min-width: 95%;
+    max-width: 95%;
+    margin-left: 2.5%;
+}
+
+details {
+    background: $primaryColor;
+    color: $secondaryColor;
+    margin: $gutter 2.5%;
+    padding: 1rem;
+    border-radius: 1rem;
+    
+}
+// footer stuff
+
+#footerWrapper {
+    background-color: $primaryColor;
+
+}
+
+footer {
+    padding: 0.5rem $gutter;
+    text-align: center;
+    p {
+        margin: 0;
+        font-weight: $mediumWeight;
+        color: $secondaryColor;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Start file sample">
+    <meta name="author" content="Spencer Anderson">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+
+    <!-- Favicon stuff here-->
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <title>Definitely Architecture</title>
+</head>
+<body>
+    <div id="headerWrapper">
+        <header>
+            <img src="images/1xlogo.png" alt="House Logo for Definitely Architecture" width="50" height="50" srcset="images/1xlogo.png 1x, images/2xlogo.png 2x, images/3xlogo.png 3x">
+            <h1>Definitely Architecture</h1>
+        </header>
+    </div>
+
+    <div id="navWrapper">
+        <nav>
+            <ul>
+                <li class="active"><a href="#">100% Architecture</a></li>
+                <li><a href="#">More Architecture</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="mainWrapper">
+        <main>
+            <picture>
+                <source media="(max-width:500px)" srcset="images/smallHero.jpg">
+                <source media="(max-width:1000px)" srcset="images/midHero.jpg">
+                <img src="images/largeHero.jpg" alt="Me skiing with hoodie created by a stud">
+            </picture>
+
+            <video controls preload="metadata">
+                <source src="Media/Hoodies.mp4" type="video/mp4" />
+                <source src="Media/Hoodies.webm" type="video/webm" />
+                <track
+                    label="English"
+                    kind="subtitles"
+                    srclang="en"
+                    src="Media/Captions-EN.vtt"
+                    default />
+                <track
+                    label="Deutsch"
+                    kind="subtitles"
+                    srclang="de"
+                    src="Media/Captions-DE.vtt" />
+                </video>
+                <details>
+                    <summary>Transcript</summary>
+                    <P>Every once in a while I do something to challenge my creativity, and one of those things that I have done every single year for, I think about the last four years, maybe five years, I could be wrong. Was make a hoodie design for me and any of my friends that wanted to as well, usually before the ski season starts. Because guess what? I'm going to wear hoodies when I'm skiing. Who would have thought is insane? This year I made the Levi Squad hoodie, which is based off of the show Attack on Titan, which is a phenomenal show with an amazing plot, which I think everyone should watch. I know a lot of people don't want to because oh my gosh, is anime. It's great. Okay, it's basically just it's the least anime anime you ever seen. This is the front. This is the back. Very exciting. Last year I made a Black Ops two hoodie, which kind of seems a little bit random. The game did come out in 2012, but at the story takes place in 2025, so of course I had to make it. It's one of my favorite games and a lot of my other friends favorite game. So, you know, I'd be missing out if I didn't make that for the 2025 footy the year before that. And in Minecraft, I actually know the year before that. I did portal, which is an excellent puzzle game released by valve, and then obviously Minecraft the year before that, everyone has played Minecraft and if you haven't, you've either solved a Rubik's Cube. I, I'm convinced that every year has either solved a Rubik's Cube or played Minecraft. And if you haven't done either of those things, you're kind of missing out on what it's like to have the male experience in this world. Consider giving me a pass on this assignment.</P>
+                </details>
+        </main>
+    </div>
+
+    <div id="footerWrapper">
+        <footer>
+            <p>&copy;<span id="year"></span> Spencer Anderson</p>
+        </footer>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
